@@ -20,8 +20,9 @@ main{
     width: 360px;
     height: 470px;
     border-radius: 20px;
-    border: 1px solid #6bced2;
+    border: 1px solid green($color: #000000);
     background: rgb(154,205,50);
+    box-shadow: 8px 5px 2px 0 rgb(67, 95, 11);
     
     
     #num1{
@@ -44,15 +45,19 @@ main{
             min-width: 100px; 
             height: 40px;
             font-size: 18px;
-            margin:  10px 2px;
+            margin:  10px 3px;
             border-radius: 10px;
             border: none;
-            box-shadow: 0.5px 0.5px 1px 1px gray;
+            box-shadow: 4px 5px 3px 0 gray;
             transition: ease-in 0.2s;
         }
         input:hover{
             cursor: pointer;
             transform: scale(1.02);
+        }
+        
+        input:active{
+            transform: scale(0.9);
         }
         
     }
