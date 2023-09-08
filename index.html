@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css-scss/css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <main>
+        <input type="text" id="num1" >
+
+        <div class="buttons">
+            <input type="button" value="/" onclick="convertir('/')">
+            <input type="button" value="*" onclick="convertir('*')">
+            <input type="button" value="-" onclick="convertir('-')">
+            <input type="button" value="9" onclick="convertir('9')">
+            <input type="button" value="8" onclick="convertir('8')">
+            <input type="button" value="+" onclick="convertir('+')">
+            <input type="button" value="7" onclick="convertir('7')">
+            <input type="button" value="6" onclick="convertir('6')">
+            <input type="button" value="5" onclick="convertir('5')">
+            <input type="button" value="4" onclick="convertir('4')">
+            <input type="button" value="3" onclick="convertir('3')">
+            <input type="button" value="2" onclick="convertir('2')">
+            <input type="button" value="1" onclick="convertir('1')">
+            <input type="button" value="c" onclick="limpiar()">
+            <input type="button" value="=" id="resultado" onclick="ecuacion()">
+        </div>
+    </main>
+    <script src="/public/src/calculadora.js"></script>
+</body>
+</html>
